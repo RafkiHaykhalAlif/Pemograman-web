@@ -1,0 +1,143 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #e3f2fd; /* Light blue background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container Styles */
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    width: 500px;
+    max-width: 90%;
+}
+
+/* Form Styles */
+h1 {
+    font-size: 32px; /* Larger title */
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1e88e5; /* Strong blue for heading */
+}
+
+form label {
+    font-size: 18px; /* Larger labels */
+    margin-bottom: 10px;
+    color: #3949ab; /* Darker blue for labels */
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="tel"], 
+select {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border: 2px solid #1e88e5; /* Blue border */
+    border-radius: 8px;
+    background-color: #e3f2fd;
+    font-size: 18px; /* Larger input text */
+    color: #333;
+}
+
+select {
+    cursor: pointer;
+}
+
+input:focus, select:focus {
+    border-color: #3949ab; /* Darker blue focus border */
+    outline: none;
+}
+
+a[type="submit"] {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: #43a047; /* Green background */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 20px; /* Larger button text */
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+a[type="submit"]:hover {
+    background-color: #2e7d32; /* Darker green on hover */
+}
+
+/* Table Styles for Detail Page */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+th, td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px; /* Larger table text */
+    color: #3949ab; /* Consistent color for details */
+}
+
+th {
+    background-color: #1e88e5; /* Blue background for headers */
+    color: white;
+    font-weight: normal;
+}
+
+td {
+    background-color: #e3f2fd;
+}
+
+a {
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+    color: #1e88e5;
+    font-size: 18px; /* Larger link text */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0d47a1; /* Darker blue on hover */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input[type="text"], 
+    input[type="email"], 
+    input[type="tel"], 
+    select {
+        padding: 12px;
+    }
+
+    th, td {
+        font-size: 16px;
+    }
+}
